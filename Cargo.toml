@@ -1,0 +1,11 @@
+[package]
+name = "tiberius-0-9-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+tokio-util = { version = "0.7", features = ["compat"] }
+tiberius = { version = "0.9", features = ["chrono", "tokio"] }
